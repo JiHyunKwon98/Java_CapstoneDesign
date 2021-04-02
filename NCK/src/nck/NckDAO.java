@@ -46,11 +46,11 @@ public class NckDAO {
 			if (rs.next()) {
 				return rs.getInt(1)+ 1;
 			}
-			return 1; // ù��° �Խù� �ΰ��
+			return 1; //
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -1; // �����ͺ��̽� ����
+		return -1; // 
 	}
 	
 	
@@ -83,7 +83,7 @@ public class NckDAO {
 	         }catch(Exception e) {
 	            e.printStackTrace();
 	         }
-	         return -1; // �����ͺ��̽� ����
+	         return -1; //
 	      }
 	   
 	   
@@ -171,7 +171,7 @@ public class NckDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return false; // �����ͺ��̽� ����
+		return false; // 
 	}
 	
 	public Nck getDetailNck(int nckID) {
@@ -203,7 +203,7 @@ public class NckDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return null; // �����ͺ��̽� ����
+		return null; // 
 	}
 	
 	
@@ -218,7 +218,7 @@ public class NckDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -1; // �����Ϳ��̽� ����
+		return -1; // 
 	}
 	
 	public int updateh(int nckID, int nckHit) {
@@ -231,7 +231,7 @@ public class NckDAO {
 	      }catch(Exception e) {
 	         e.printStackTrace();
 	      }
-	      return -1; // �����Ϳ��̽� ����
+	      return -1; // 
 	   }
 
 	public int goodupdate(int nckID, int nckCurrent) { 
@@ -244,7 +244,7 @@ public class NckDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -1; // �����Ϳ��̽� ����
+		return -1; //
 	}
 	
 
@@ -272,7 +272,7 @@ public class NckDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -1; // �����Ϳ��̽� ����
+		return -1; // 
 	}
 	
 	
@@ -288,7 +288,7 @@ public class NckDAO {
 	      }catch(Exception e) {
 	         e.printStackTrace();
 	      }
-	      return -1; // 데이터에이스 오류
+	      return -1; // 
 	   }
 	   
 	

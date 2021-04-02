@@ -219,7 +219,7 @@ public class goodsDAO {
       }catch(Exception e) {
          e.printStackTrace();
       }
-      return -1; // 데이터에이스 오류
+      return -1; // 데이터베이스 오류
    }
    
    public String getbidemail(String bid, String bemail) {

@@ -44,17 +44,28 @@
 		
 		nckDAO.updateb(nckID, beID, beEmail);
 
+		//현재가
 		String num = nck.getNckCurrent();
-		int c = Integer.parseInt(num);
-		String a = nck.getNckStart();
-		int b = 0;
-		b += Integer.parseInt(a);
-		int e = c - b;
-		int sum = b + Integer.parseInt(nck.getNckUnit());
+		// String형인  현재가를 int형으로 저장하는 변수 선언   
+		int currentCost = Integer.parseInt(num);
+		 
+		//시작가 
+		String startCost = nck.getNckStart();
+		
+		// String형인  시작가를 int형으로 누적해서 저장하는 변수 선언   
+		int startNumCost = 0;
+		startNumCost += Integer.parseInt(startCost);
+		
+		// 현재가 - 시작가  = 오르는 단위 
+		int unitCost = currentCost - startNumCost;
+		
+		// sum = 시작가 + 오르는 단위 
+		int sum = startNumCost + Integer.parseInt(nck.getNckUnit());
+		
+		// 최종 가격 = 현재가 - 시작가  + 시작가  + 오르는 단위  
+		String finalCost = Integer.toString(unitCost + sum);
 
-		String d = Integer.toString(e + sum);
-
-		int result = nckDAO.updatep(nckID, d);
+		int result = nckDAO.updatep(nckID, finalCost);
 
 		if (result == -1) {
 			PrintWriter script = response.getWriter();

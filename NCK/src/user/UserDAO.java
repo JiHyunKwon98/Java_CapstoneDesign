@@ -90,7 +90,7 @@ public class UserDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return null; // �����ͺ��̽� ����
+		return null; // 
 	}
 	
 	public int update(String userMbank, String userAccount ) {
@@ -103,7 +103,7 @@ public class UserDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -1; // �����Ϳ��̽� ����
+		return -1; // 
 	}
 	
 
