@@ -207,7 +207,7 @@ public class NckDAO {
 	}
 	
 	
-	public int updatep(int nckID, String nckCurrent) { //���� ����
+	public int updatep(int nckID, String nckCurrent) { 
 		String SQL = "UPDATE nck SET nckCurrent = ? WHERE nckID = ?";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
